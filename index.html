@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Age calculator app</title>
+</head>
+
+<body class="bg-orange-50 flex justify-center mt-20">
+
+  <div class="container bg-white w-96 p-10">
+    <form action="submit">
+      <div class="inputAge -ml-6 flex gap-8">
+        <div class="day flex flex-col">
+          <label class="text-gray-500 font-semibold text-sm">DAY</label>
+          <input id="day" placeholder="DD" class="h-10 w-20 rounded-s cursor-pointer border-2" required type="text">
+        </div>
+        <div class="month flex flex-col">
+          <label class="text-gray-500 font-semibold text-sm">MONTH</label>
+          <input id="month" placeholder="MM" class="h-10 rounded-s cursor-pointer w-20 border-2" required type="text">
+        </div>
+        <div class="year flex flex-col">
+          <label class="text-gray-500 font-semibold text-sm">YEAR</label>
+          <input id="year" placeholder="YYYY" class="h-10 rounded-s cursor-pointer w-20 border-2" required type="text">
+        </div>
+      </div>
+      <div class="arrow mt-2">
+        <div class="slash border-t-2 w-80 relative top-5 right-8"></div>
+        <div>
+          <img id="calculate" class="purple rounded-full p-2 cursor-pointer h-10 relative left-72" src="assets/images/icon-arrow.svg" type="button">
+        </div>
+      </div>
+    </form>
+    <div class="result flex flex-col gap-4">
+      <div class="years flex gap-2">
+        <h1 id="result-years" class="text-5xl ptext font-extrabold">--</h1><h1 class="text-5xl font-extrabold">years</h1>
+      </div>
+      <div class="months flex gap-2">
+        <h1 id="result-months" class="text-5xl ptext font-extrabold">--</h1><h1 class="text-5xl font-extrabold">months</h1>
+      </div>
+      <div class="days flex gap-2">
+        <h1 id="result-days" class="text-5xl ptext font-extrabold">--</h1><h1 class="text-5xl font-extrabold">days</h1>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

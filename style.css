@@ -1,0 +1,10 @@
+.purple{
+    background-color: hsl(259, 100%, 65%);
+}
+.ptext{
+    color: hsl(259, 100%, 65%);
+}
+.container{
+    border-radius: 20px;
+    border-bottom-right-radius: 100px;
+}
