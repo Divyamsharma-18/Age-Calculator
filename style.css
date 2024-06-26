@@ -8,3 +8,21 @@
     border-radius: 20px;
     border-bottom-right-radius: 100px;
 }
+
+@media (max-width: 374px) {
+    .container{
+        width: 320px;
+    }
+    .inputAge{
+        display: flex;
+    }
+    #calculate{
+        left: 240px;
+    }
+    .arrow{
+        width: 200px;   
+    }
+    #day,#month,#year{
+        width: 58px;
+    }
+  }
